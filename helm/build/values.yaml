@@ -1,0 +1,15 @@
+app:
+  name: hpwad-live-poi-gateway-app
+  namespace: hpwad-live
+  cluster: .apps.redhatdevhub.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-test/hpwad-live-gateway
+  org: devhub-test
+  name: hpwad-live-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hpwad-live/poi-gateway-app
+  tag: latest
